@@ -5,53 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akan Name Generator</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel=""
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>AKAN NAME GENERATOR</h1>
-    <p>Akan names are derived from the Akan people of Ghana.</p>
-    <p>
-      The naming system involves naming their children after the day of the week
-      they were born and the order in which they were born.
-    </p>
-    <p>
-      These <strong>"day names"</strong>have further meanings concerning the
-      soul and character of the person.
-    </p>
-    <p>The Akan naming tradition is shared throughout West Africa.</p>
+    <div class="container-fluid">
+      <h1>AKAN NAME GENERATOR</h1>
+      <p>Akan names are derived from the Akan people of Ghana.</p>
+      <p>
+        The naming system involves naming their children after the day of the
+        week they were born and the order in which they were born.
+      </p>
+      <p>
+        These <strong>"day names"</strong>have further meanings concerning the
+        soul and character of the person.
+      </p>
+      <p>The Akan naming tradition is shared throughout West Africa.</p>
 
-    <p>
-      Most Ghanians have atleast one name from this system even if they also
-      have English or christian names. To read more on the Akan people and their
-      naming systems click
-      <a href="https://en.wikipedia.org/wiki/Akan_names" target="blank">here.</a>
-    </p>
-    <p>
-      Notable figures with Akan names include Ghana's first president
-      <strong>Kwame Nkrumah</strong> and former United Nation's
-      Secretary-General <strong>Kofi Annan</strong>
-    </p>
-    <p>Here are the Ghanaian <em>"day names" </em>according to gender:</p>
-    <h2>Male</h2>
-    <ul>
-      <li>Sunday: Kwasi</li>
-      <li>Monday: Kwadwo</li>
-      <li>Tuesday: Kwabena</li>
-      <li>Wednesday: Kwaku</li>
-      <li>Thursday: Yaw</li>
-      <li>Friday: Kofi</li>
-      <li>Saturday: Kwame</li>
-    </ul>
-    <h2>Female</h2>
-    <ul>
-      <li>Sunday: Akosua</li>
-      <li>Monday: Adwoa</li>
-      <li>Tuesday: Abenaa</li>
-      <li>Wednesday: Akua</li>
-      <li>Thursday: Yaa</li>
-      <li>Friday: Afua</li>
-      <li>Saturday: Ama</li>
-    </ul>
+      <p>
+        Most Ghanians have atleast one name from this system even if they also
+        have English or christian names. To read more on the Akan people and
+        their naming systems click
+        <a href="https://en.wikipedia.org/wiki/Akan_names" target="blank"
+          >here.</a
+        >
+      </p>
+      <p>
+        Notable figures with Akan names include Ghana's first president
+        <strong>Kwame Nkrumah</strong> and former United Nation's
+        Secretary-General <strong>Kofi Annan</strong>
+      </p>
+      <p>Here are the Ghanaian <em>"day names" </em>according to gender:</p>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <h3 id="title">Male Names</h3>
+          <ul>
+            <li>Sunday: Kwasi</li>
+            <li>Monday: Kwadwo</li>
+            <li>Tuesday: Kwabena</li>
+            <li>Wednesday: Kwaku</li>
+            <li>Thursday: Yaw</li>
+            <li>Friday: Kofi</li>
+            <li>Saturday: Kwame</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Female Names</h3>
+          <ul>
+            <li>Sunday: Akosua</li>
+            <li>Monday: Adwoa</li>
+            <li>Tuesday: Abenaa</li>
+            <li>Wednesday: Akua</li>
+            <li>Thursday: Yaa</li>
+            <li>Friday: Afua</li>
+            <li>Saturday: Ama</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+        <form>
+          <label for="birthdate">Enter your birthday:</label>
+          <input id="birthdate" type="date"
+          on-change="handleDateChange()"/>
+          <label for="gender">Gender:</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="male">
+          <label for="female">Female</label>
+          
+          <button type="submit">Submit</button>
+
+        </form>
+
+      
+    </div>
   </body>
 </html>
