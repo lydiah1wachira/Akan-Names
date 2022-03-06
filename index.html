@@ -9,7 +9,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <h1>AKAN NAME GENERATOR</h1>
       <p>Akan names are derived from the Akan people of Ghana.</p>
       <p>
@@ -36,49 +36,58 @@
         Secretary-General <strong>Kofi Annan</strong>
       </p>
       <p>Here are the Ghanaian <em>"day names" </em>according to gender:</p>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <h3 id="title">Male Names</h3>
-          <ul>
-            <li>Sunday: Kwasi</li>
-            <li>Monday: Kwadwo</li>
-            <li>Tuesday: Kwabena</li>
-            <li>Wednesday: Kwaku</li>
-            <li>Thursday: Yaw</li>
-            <li>Friday: Kofi</li>
-            <li>Saturday: Kwame</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h3>Female Names</h3>
-          <ul>
-            <li>Sunday: Akosua</li>
-            <li>Monday: Adwoa</li>
-            <li>Tuesday: Abenaa</li>
-            <li>Wednesday: Akua</li>
-            <li>Thursday: Yaa</li>
-            <li>Friday: Afua</li>
-            <li>Saturday: Ama</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-        <form>
-          <label for="birthdate">Enter your birthday:</label>
-          <input id="birthdate" type="date"
-          on-change="handleDateChange()"/>
-          <label for="gender">Gender:</label>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="male">
-          <label for="female">Female</label>
-          
-          <button type="submit">Submit</button>
 
-        </form>
-
-      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <h3 id="title">Male Names</h3>
+            <ul>
+              <li>Sunday: Kwasi</li>
+              <li>Monday: Kwadwo</li>
+              <li>Tuesday: Kwabena</li>
+              <li>Wednesday: Kwaku</li>
+              <li>Thursday: Yaw</li>
+              <li>Friday: Kofi</li>
+              <li>Saturday: Kwame</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Female Names</h3>
+            <ul>
+              <li>Sunday: Akosua</li>
+              <li>Monday: Adwoa</li>
+              <li>Tuesday: Abenaa</li>
+              <li>Wednesday: Akua</li>
+              <li>Thursday: Yaa</li>
+              <li>Friday: Afua</li>
+              <li>Saturday: Ama</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <form id="birthday_form">
+              <div>
+                <label>Date of birth:</label>
+                <input type="date" id="date"/>
+              </div>
+              <br>
+              <div>
+                <label>Select Gender:</label>
+                <select class="form-control" id="gender">
+                  <option value="male">Male</option>
+                  <option value="femaile">Female</option>
+                </select>
+              </div>
+              <br>
+              
+                   
+              <button type="submit" id="submit_form">
+                Submit
+              </button>
+            </form>
+            <script src="./js/scripts.js"></script>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
