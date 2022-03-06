@@ -50,6 +50,7 @@ body{
 }
 
 body{
+  margin: auto;
   background-image:url(../images/img3.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,11 +58,13 @@ body{
 }
 
 h1{
+  padding: 15px;
  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
  color:aqua
 
 }
 
 h3{
+  padding:10px;
   color:aqua
 }
