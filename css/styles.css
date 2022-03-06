@@ -58,6 +58,7 @@ body{
 }
 
 h1{
+  text-align: center;
   padding: 15px;
  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
  color:aqua
@@ -67,4 +68,12 @@ h1{
 h3{
   padding:10px;
   color:aqua
+}
+#birthday_form{
+  padding: 10px;
+  border: #888;
+  background-color: grey;
+}
+#submit_form{
+  color: green;
 }
