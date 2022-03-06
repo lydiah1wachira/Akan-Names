@@ -70,9 +70,10 @@ h3{
   color:aqua
 }
 #birthday_form{
+  color: black;
   padding: 10px;
   border: #888;
-  background-color: grey;
+  background-color: rgb(128, 128, 128);
 }
 #submit_form{
   color: green;
