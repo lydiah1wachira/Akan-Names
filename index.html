@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akan Name Generator</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <button id="myBtn">Open Modal</button>
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal_content_p"></p>
+      </div>
+    </div>
     <div class="container">
       <h1>AKAN NAME GENERATOR</h1>
       <p>Akan names are derived from the Akan people of Ghana.</p>
@@ -74,7 +83,7 @@
                 <label>Select Gender:</label>
                 <select class="form-control" id="gender">
                   <option value="male">Male</option>
-                  <option value="femaile">Female</option>
+                  <option value="female">Female</option>
                 </select>
               </div>
               <br>
@@ -89,5 +98,10 @@
         </div>
       </div>
     </div>
+    <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+
   </body>
 </html>

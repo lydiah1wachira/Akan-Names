@@ -1,25 +1,34 @@
-//collect form data
-//collect data from  text boxes
- let birthday = document.getElementById('date').value;
 
+ 
 const {gender, date} = document.forms.birthday_form.elements;
 
 const submitButton = document.getElementById('submit_form')
 
+let modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+let paragraph = document.getElementById("modal_content_p")
+
+
 submitButton.addEventListener('click', (e) => {
   e.preventDefault()
-  if(!!gender.value  || !!date.value){
+  if(!gender.value  || !date.value){
     alert("Please provide both gender and date")
     return;
   }
-  const genderValue = gender.value
+  const genderValue = gender.value.toLocaleLowerCase()
 
   const day = new Date(date.value).toLocaleString('en-us', {weekday:'long'}).toLocaleLowerCase()
-  
-  const dateWithGender = datesOfBirth[day]
 
-  console.log(dateWithGender[genderValue])
+  showNames(genderValue, day)
 })
+
+function showNames(gender, date){
+    
+  const dateWithGender = datesOfBirth[date]
+
+  modal.style.display = "block";
+  paragraph.innerHTML = `Your Akan Name is ${dateWithGender[gender]}`
+}
 
 
 const datesOfBirth = {
@@ -54,6 +63,17 @@ const datesOfBirth = {
 
 }
 
-let days = ["Sunday", "Monday", "Tuesday", "Wesdnesday", "Thursday", 'Friday', 'Saturday']
-let maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
-let femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+
+// Get the modal
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
