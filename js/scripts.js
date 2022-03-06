@@ -16,12 +16,10 @@ submitButton.addEventListener('click', (e) => {
     alert("Please input a valid date")
     return;
    }
+  
   const genderValue = gender.value.toLocaleLowerCase()
 
   const day = new Date(date.value).toLocaleString('en-us', {weekday:'long'}).toLocaleLowerCase()
-
-  showNames(genderValue, day)
-})
 
 function showNames(gender, date){
     
