@@ -14,7 +14,24 @@ Akan name generator is a program that is based on the akan naming system of the 
 - open the index.html in a browser
 - To make changes to the program, open the folder in a text editor of your choice.
 - alternatively, open the file as a website( view only):
--
+
+## Behaviour Driven Development
+1. Display form for entering the date and gender.
+  * INPUT: "User's birth date entered"
+           "User's gender selected."
+  *OUTPUT: "modal that displays user's Akan name based on birtdate and gender selected."
+
+2. Getting the data(input) from the form element.
+
+3. add an EventListner, to validate the form
+  *INPUT: ""(blank)
+  *OUTPUT: "alert error message.
+
+4.Use JavaScript get Day method to get the day of the week from the input.
+
+5. create object containing days of the week and their values( male and female names), with sunday at index 0
+
+6. create function to display the output.
 
 ## Known Bugs
 
