@@ -13,7 +13,7 @@ Akan name generator is a program that is based on the akan naming system of the 
 - clone this repository to an empty folder in your computer: https://github.com/lydiah1wachira/Akan-Names.git
 - open the index.html in a browser
 - To make changes to the program, open the folder in a text editor of your choice.
-- alternatively, open the file as a website( view only):
+- alternatively, open the file as a website( view only): https://lydiah1wachira.github.io/Akan-Names/
 
 ## Behaviour Driven Development
 1. Display form for entering the date and gender.
